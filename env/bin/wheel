@@ -1,4 +1,4 @@
-#!/home/ubuntu/workspace/env/bin/python
+#!/home/ubuntu/workspace/env/bin/python3
 
 # -*- coding: utf-8 -*-
 import re
