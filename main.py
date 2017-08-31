@@ -21,9 +21,17 @@ for comment in rall.stream.comments():
 		print(match.group(),'\n',needed.title(),'\n')
 		
 		# Reply to the comment
-		#response = comment.reply( "I'll look for someone who", ' '.join(match.group(1,5)).lower() )
-		#print("Replied to comment "+comment.id+":",response.permalink())
+		#try:
+		#	response = comment.reply( "I'll look for someone who", ' '.join(match.group(1,5)).lower() )
+		#except: 
+		#	print("Failed to reply to comment"+comment.id); raise
+		#else:
+		#	print("Replied to comment "+comment.id+":",response.permalink())
 		
 		# Post to our sub
-		post = sub.submit(needed.title(), url='https://www.reddit.com'+comment.permalink(), resubmit=False)
-		print("Posted to sub:",post.shortlink)
+		try:
+			post = sub.submit(needed.title(), url='https://www.reddit.com'+comment.permalink(), resubmit=False)
+		except:
+			print("Failed to post to our sub"); raise
+		else:
+			print("Posted to sub:",post.shortlink)
