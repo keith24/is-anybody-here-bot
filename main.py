@@ -9,6 +9,8 @@ reddit = praw.Reddit('DEFAULT')
 rall = reddit.subreddit('all')
 sub = reddit.subreddit('IsAnybodyHere')
 
+print("Started IsAnybodyHereBot...")
+
 # Search latest comments in r/all
 for comment in rall.stream.comments():
 	

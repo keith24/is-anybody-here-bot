@@ -7,8 +7,16 @@
 
 # Usage
 
+I recommend setting up an environment with `virutalenv`: 
+
+```sh
+virtualenv -p python3 env
+source env/bin/activate
+pip install -r requirements.txt
+```
+
 To run the bot, simply run main.py with python3, setting environment variables for praw: 
 
 ```sh
-praw_client_id=XXXXXXXXXXXXXX praw_client_secret=XXXXXXXXXXXXXXXXXXXXXXXXXXX praw_password=XXXXXXXX python main.py
+praw_client_id=XXXXXXXXXXXXXX praw_client_secret=XXXXXXXXXXXXXXXXXXXXXXXXXXX praw_password=XXXXXXXX ./env/bin/python3 main.py
 ```
