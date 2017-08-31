@@ -13,7 +13,7 @@ sub = reddit.subreddit('IsAnybodyHere')
 for comment in rall.stream.comments():
 	
 	# Match with regex
-	match = re.search("(does|has|is)(n't)? (any one|anyone|someone|anybody) (here)? (.*)\?", comment.body, re.IGNORECASE)
+	match = re.search("(does|has|is)(n't)? (any one|anyone|someone|anybody) (here)? (.*?)\?", comment.body, re.IGNORECASE)
 	if match:
 		
 		# Extract a description of the needed person
