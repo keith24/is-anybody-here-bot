@@ -17,11 +17,11 @@ for comment in rall.stream.comments():
 	if match:
 		
 		# Extract a description of the needed person
-		needed = match.group(3), 'who', match.group(1), match.group(5)
-		print(match.group(),'\n',needed,'\n')
+		needed = match.group(3) + ' who ' + match.group(1) + ' ' + match.group(5)
+		print(match.group(),'\n',needed.title(),'\n')
 		
 		# Reply to the comment
-		#response = comment.reply( "I'll look for someone who", match.group(1), match.group(5) )
+		#response = comment.reply( "I'll look for someone who", ' '.join(match.group(1,5)).lower() )
 		#print("Replied to comment "+comment.id+":",response.permalink())
 		
 		# Post to our sub
