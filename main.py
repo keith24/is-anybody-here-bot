@@ -1,6 +1,15 @@
 #!./env/bin/python
 # main.py
 
+'''
+Is Anybody Here Bot
+
+VERSION: 0.1.0
+DESCRIPTION: A reddit bot that helps find people in the know
+AUTHOR: Keith Irwin <https://keithirwin.us/>
+SOURCE: https://github.com/keith24/is-anybody-here-bot
+'''
+
 
 import praw, pdb, re, os
 
