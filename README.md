@@ -1,5 +1,5 @@
 # Is Anybody Here Bot
-###### v0.1.0
+###### v0.1.1
 [Keith Irwin](https://keithirwin.us/)
 
 
@@ -20,3 +20,8 @@ To run the bot, simply run main.py with python3, setting environment variables f
 ```sh
 praw_client_id=XXXXXXXXXXXXXX praw_client_secret=XXXXXXXXXXXXXXXXXXXXXXXXXXX praw_password=XXXXXXXX ./env/bin/python3 main.py
 ```
+
+# Changelog
+
+### v0.1.1
+* Added subreddit blacklist
