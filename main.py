@@ -32,6 +32,6 @@ for comment in rall.stream.comments():
 			try:
 				post = sub.submit(needed.title(), url='https://www.reddit.com'+comment.permalink(), resubmit=False)
 			except:
-				print("Failed to post to our sub"); raise
+				print("Failed to post",comment.id,"to our sub")
 			else:
 				print("Posted to sub:",post.shortlink)
